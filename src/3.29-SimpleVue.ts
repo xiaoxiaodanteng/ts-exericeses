@@ -42,7 +42,7 @@ const instance = SimpleVue({
 
 type DataFn = () => object;
 
-type Computed = Record<keyof object, string>;
+type Computed = Record<keyof object, () => any>;
 
 class SimpleVue{
   constructor({}: {
